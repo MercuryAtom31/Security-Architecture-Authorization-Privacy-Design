@@ -1,0 +1,22 @@
+@startuml
+title Identity Correlation Matrix
+
+skinparam shadowing false
+hide circle
+skinparam classAttributeIconSize 0
+skinparam monochrome false
+skinparam backgroundColor #F8FAFC
+skinparam classBackgroundColor #ECFEFF
+skinparam classBorderColor #0891B2
+skinparam classFontColor #0F172A
+skinparam classHeaderBackgroundColor #CFFAFE
+
+class "Identity Correlation" as CorrelationMatrix {
+	|= Signal |= Typical identifier |= Stability |= Correlation use |
+	| Cookies | Cookie ID | Medium to high | Links repeat visits and cross-site activity |
+	| Fingerprinting | Device/browser signature | High | Re-identifies users after cookie resets |
+	| IP pattern | Source IP + ASN + geolocation | Medium | Adds network context to strengthen matches |
+	| Combined signals | Multi-signal profile | Very high | Enables cross-session re-identification |
+}
+
+@enduml
