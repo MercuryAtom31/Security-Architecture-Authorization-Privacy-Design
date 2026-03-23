@@ -3,7 +3,7 @@
 
 BEGIN;
 
--- 1) Create group roles (NOLOGIN)
+-- 1) Creating group roles (NOLOGIN)
 CREATE ROLE hr_role NOLOGIN;
 CREATE ROLE finance_analyst_role NOLOGIN;
 CREATE ROLE finance_manager_role NOLOGIN;
@@ -15,8 +15,8 @@ CREATE ROLE user_hr1 LOGIN PASSWORD 'ChangeMe_HR1';
 CREATE ROLE user_fin_analyst1 LOGIN PASSWORD 'ChangeMe_FIN1';
 CREATE ROLE user_payroll1 LOGIN PASSWORD 'ChangeMe_PAY1';
 
--- 3) Grant object-level permissions
--- Assumes these tables exist in schema public:
+-- 3) Granting object-level permissions
+-- Assuming these tables exist in schema public:
 -- public.employee_records, public.financial_reports, public.payroll, public.audit_logs
 
 GRANT SELECT, UPDATE (employee_name, address, tax_code)
@@ -41,18 +41,14 @@ ON TABLE public.financial_reports
 TO finance_manager_role;
 
 -- Separation of duties example:
--- Explicitly ensure finance managers cannot modify payroll
+-- Explicitly ensuring finance managers cannot modify payroll
 REVOKE UPDATE
 ON TABLE public.payroll
 FROM finance_manager_role;
 
--- 4) Assign group roles to users
+-- 4) Assigning group roles to users
 GRANT hr_role TO user_hr1;
 GRANT finance_analyst_role TO user_fin_analyst1;
 GRANT payroll_role TO user_payroll1;
 
 COMMIT;
-
--- Optional verification queries:
--- \du
--- \z public.employee_records
