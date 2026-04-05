@@ -106,4 +106,4 @@ These concepts are directly applicable to:
 ## 👨‍💻 Author
 
 Hichem Benzair
-Computer Science Graduate | Aspiring IAM & GRC Specialist.
+Computer Science Graduate | Cybersecurity Student at McGill University | Aspiring IAM & GRC Specialist.
