@@ -132,3 +132,10 @@ GRANT finance_analyst_role TO user_fin_analyst1;
 ## Conclusion
 
 The hybrid RBAC + ABAC model provides a strong balance of control and flexibility for protecting payroll and financial data. It supports least privilege, separation of duties, and contextual access checks, making it suitable for a realistic enterprise environment.
+
+## References
+
+- OWASP Foundation. Authorization Cheat Sheet.
+- National Institute of Standards and Technology (NIST). Guide to Attribute Based Access Control (ABAC) Definition and Considerations.
+- PostgreSQL Global Development Group. PostgreSQL Documentation: GRANT and REVOKE.
+- Course slides on authorization model design, RBAC, and ABAC.

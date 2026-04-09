@@ -107,3 +107,11 @@ It significantly reduces tracking risk, but complete anonymity cannot be guarant
 ## Conclusion
 
 The privacy-friendly architecture reduces tracking and identity correlation by combining anonymization, tokenization, minimal data collection, and compliance controls. It is practical for a global company because it balances user privacy, operational needs, and regulatory requirements.
+
+## References
+
+- European Union. General Data Protection Regulation (GDPR).
+- State of California. California Consumer Privacy Act (CCPA) / California Privacy Rights Act (CPRA).
+- OWASP Foundation. Privacy Risks and related privacy guidance.
+- W3C privacy and tracking-prevention materials.
+- Course slides on cookies, browser fingerprinting, IP tracking, and privacy architecture.
