@@ -93,6 +93,10 @@ Examples:
 
 This separation prevents any single person from controlling an end-to-end sensitive workflow.
 
+## Diagrams
+
+- [Access Matrix diagram](../diagrams/access-matrix.puml)
+
 ## Tool Selection
 
 Option B: SQL simulation using GRANT and REVOKE.
@@ -124,3 +128,7 @@ GRANT finance_analyst_role TO user_fin_analyst1;
 - It is practical to implement in enterprise systems.
 - It enforces least privilege and separation of duties in measurable ways.
 - It reduces attack surface while supporting real operational needs.
+
+## Conclusion
+
+The hybrid RBAC + ABAC model provides a strong balance of control and flexibility for protecting payroll and financial data. It supports least privilege, separation of duties, and contextual access checks, making it suitable for a realistic enterprise environment.
